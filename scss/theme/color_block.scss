@@ -1,0 +1,284 @@
+/*! Color Block Theme Stylesheet */
+
+header {
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 20px 0;
+  a {
+    color: $dark;
+  }
+  .active {
+    color: $blue;
+  }
+  .logo img {
+    padding: 0 15px;
+  }
+  .underline {
+    width: 20px;
+    height: 5px;
+    margin: 0px auto;
+    border-bottom: 3px solid $blue;
+  }
+  .nav-link {
+    padding-bottom: 0;
+  }
+  ul.humburger-menu {
+    list-style: none;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      padding: 0 !important;
+      img {
+        width: 35px;
+      }
+    }
+  }
+}
+
+#homepage--hero {
+  background-color: $primary;
+  padding: 66px 0 80px 0;
+  color: $white;
+
+  h1 {
+    font-size: $display4-size;
+  }
+
+  p { 
+    color: $light-blue;
+    font-size: 1.125rem;
+    font-weight: $display4-weight;
+
+    &.form-disclaimer {
+      font-family: $font-family-secondary;
+      font-size: .5rem;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+  }
+}
+
+.custom-form {
+  border: 0 none;
+  padding: 1.25rem 1.5rem;
+  display: inline-block;
+  width: 90%;
+  background-color: $white;
+  font-family: $font-family-secondary;
+  font-size: $input-btn-font-size;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: $btn-border-radius;
+  &::placeholder {
+    color: $gray-500;
+  }
+  &.amount {
+    padding-left: 50px;
+    background: $white url(../images/amount.svg) center left 25px no-repeat;
+  }
+  &.telephone {
+    padding-left: 70px;
+    background: $white url(../images/telephone_bg.svg) center left 20px no-repeat;
+  }
+}
+
+
+select.custom-form {
+  background: white url(../images/icon_dropdown.svg) center right 15px no-repeat;
+}
+
+.info {
+  color: $white;
+  font-size: .5rem;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  border: 1px solid $white;
+  display: inline-block;
+}
+
+.popover {
+  border-radius: 0;
+  border-radius: 0;
+  border: 0 none;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.5);
+}
+
+.popover-body {
+  padding: 15px 20px;
+  text-align: center;
+  font-family: $font-family-secondary;
+  color: $gray-500;
+}
+
+
+#homepage--take-5 {
+  background-color: $pink;
+  color: $blue;
+  padding: 95px 0 85px 0;
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      font-weight: 900;
+    }  
+  }
+}
+
+#homepage--benefits {
+  background-color: $beige;
+  padding: 60px 0;
+  color: $blue;
+} 
+
+#homepage--how-it-works {
+  background: $beige;
+  padding: 60px 0;
+  color: $blue;
+  min-height: 400px;
+}
+
+#homepage--table {
+  padding: 60px 0;
+  color: $blue;
+  background-color: $beige;
+  .table-wrapper {
+    background-color: $white;
+    border-radius: 3px;
+    .compare-table {
+      width: 100%;
+      thead th {
+        vertical-align: top;
+      }
+      tr {
+        padding: 1.125rem 5px;
+      }
+      tr:not(:last-child) {
+        border-bottom: 1px solid $gray-200;
+      }
+      tbody tr th {
+        font-weight: 600;
+        padding: 1.125rem 5px;
+      }
+      tbody tr th:nth-child(1) {
+        font-weight: 700;
+        font-size: .81rem;
+      }
+    }
+  }
+}
+
+.benefits-subtitle {
+  font-size: 1.25rem;
+}
+.benefit-paragraph {
+  font-size: .87rem;
+}
+
+#homepage--testimonials {
+  padding: 60px 0;
+  background-color: $light-blue;
+  color: $blue;
+  .testimonials .slide-nav {
+    top: 50%;
+  }
+  .cards {
+    width: 840px !important;
+  }
+  .card {
+    max-width: 207px;
+    max-height: 253px;
+    .name {
+      font-size: .81rem;
+    }
+    .pet-name {
+      font-size: .37rem;
+    }
+  }
+}
+
+.card .card-body .description {
+  border-bottom: 1px solid $gray-200;
+  color: $blue;
+  font-size: .81rem;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  height: 125px;
+  line-height: 1.125rem;
+}
+.section-four.container {
+  height: auto !important;
+  padding-top: 0 !important;
+}
+
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .compare-table {
+    padding-top: 1.5rem;
+    margin-top: 10px;
+  }
+  #homepage--testimonials .cards {
+   width: 100% !important;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: $blue;
+  color: $white;
+  font-size: .75rem;
+  h6 a {
+    color: #C1E3FF;
+    font-size: .625rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  a {
+    color: $white;
+    font-family: $font-family-secondary;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+  }
+}
+
+#pet-parents-home .section-four-container .section-four .testimonials .slide-nav {
+  top: 50%;
+}
+
+.humburger-content ul.app-menu-mobile li.app-menu-item.menu-header {
+  font-weight: 700;
+}
+
+.humburger-content {
+  .menu-header {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .menu-team-wrapper {
+    background-color: $blue;
+    height: 100%;
+    padding-top: 60px;
+
+    ul.app-menu-mobile {
+      li {
+        list-style-type: none;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.humburger-menu {
+  padding-left: 0;
+}
