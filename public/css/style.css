@@ -7330,6 +7330,10 @@ header {
 select.custom-form {
   background: white url(../images/icon_dropdown.svg) center right 15px no-repeat; }
 
+.small {
+  font-size: .75rem;
+  display: block; }
+
 .info {
   color: #fff;
   font-size: .5rem;
