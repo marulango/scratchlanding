@@ -139,6 +139,32 @@ select.custom-form {
   padding: 60px 0;
   color: $blue;
   min-height: 400px;
+  ol {
+    padding-left: 0;
+    border-left: 3px solid $red;
+    margin-left: 10px;
+    li {
+      counter-increment: (li);
+      list-style-type: none;
+      margin-left: 20px;
+      &:not(:last-child) {
+       padding-bottom: 30px;
+      }
+      &::before {
+        content: counter(li);
+        border: 3px solid $red;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin-left: -37px;
+        border-radius: 20px;
+        background-color: $beige;
+        margin-right: 7px;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 #homepage--table {
@@ -185,9 +211,7 @@ select.custom-form {
   .testimonials .slide-nav {
     top: 50%;
   }
-  .cards {
-    width: 840px !important;
-  }
+
   .card {
     max-width: 207px;
     max-height: 253px;
@@ -219,9 +243,6 @@ select.custom-form {
   .compare-table {
     padding-top: 1.5rem;
     margin-top: 10px;
-  }
-  #homepage--testimonials .cards {
-   width: 100% !important;
   }
 }
 

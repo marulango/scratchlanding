@@ -7367,6 +7367,28 @@ select.custom-form {
   padding: 60px 0;
   color: #265DA6;
   min-height: 400px; }
+  #homepage--how-it-works ol {
+    padding-left: 0;
+    border-left: 3px solid #F26A58;
+    margin-left: 10px; }
+    #homepage--how-it-works ol li {
+      counter-increment: li;
+      list-style-type: none;
+      margin-left: 20px; }
+      #homepage--how-it-works ol li:not(:last-child) {
+        padding-bottom: 30px; }
+      #homepage--how-it-works ol li::before {
+        content: counter(li);
+        border: 3px solid #F26A58;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        display: inline-block;
+        margin-left: -37px;
+        border-radius: 20px;
+        background-color: #FBF2EA;
+        margin-right: 7px;
+        font-weight: 700; }
 
 #homepage--table {
   padding: 60px 0;
@@ -7402,8 +7424,6 @@ select.custom-form {
   color: #265DA6; }
   #homepage--testimonials .testimonials .slide-nav {
     top: 50%; }
-  #homepage--testimonials .cards {
-    width: 840px !important; }
   #homepage--testimonials .card {
     max-width: 207px;
     max-height: 253px; }
@@ -7429,9 +7449,7 @@ select.custom-form {
 @media screen and (min-width: 768px) and (min-width: 992px) {
   .compare-table {
     padding-top: 1.5rem;
-    margin-top: 10px; }
-  #homepage--testimonials .cards {
-    width: 100% !important; } }
+    margin-top: 10px; } }
 
 .footer {
   padding: 30px 0;
