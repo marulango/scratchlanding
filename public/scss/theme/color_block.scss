@@ -71,16 +71,23 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: $btn-border-radius;
+  color: $gray-500;
   &::placeholder {
     color: $gray-500;
   }
   &.amount {
     padding-left: 50px;
     background: $white url(../images/amount.svg) center left 25px no-repeat;
+    &:-webkit-autofill {
+      background: $white url(../images/amount.svg) center left 25px no-repeat;
+    }
   }
   &.telephone {
     padding-left: 70px;
     background: $white url(../images/telephone_bg.svg) center left 20px no-repeat;
+    &:-webkit-autofill {
+      background: $white url(../images/telephone_bg.svg) center left 20px no-repeat !important;
+    }
   }
 }
 

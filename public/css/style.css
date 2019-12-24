@@ -7312,15 +7312,20 @@ header {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  color: #adb5bd; }
   .custom-form::placeholder {
     color: #adb5bd; }
   .custom-form.amount {
     padding-left: 50px;
     background: #fff url(../images/amount.svg) center left 25px no-repeat; }
+    .custom-form.amount:-webkit-autofill {
+      background: #fff url(../images/amount.svg) center left 25px no-repeat; }
   .custom-form.telephone {
     padding-left: 70px;
     background: #fff url(../images/telephone_bg.svg) center left 20px no-repeat; }
+    .custom-form.telephone:-webkit-autofill {
+      background: #fff url(../images/telephone_bg.svg) center left 20px no-repeat !important; }
 
 select.custom-form {
   background: white url(../images/icon_dropdown.svg) center right 15px no-repeat; }
