@@ -7265,7 +7265,7 @@ header {
   padding: 20px 0; }
   header a {
     color: #343a40; }
-  header .active {
+  header .navbar-nav .active a.nav-link {
     color: #265DA6; }
   header .logo img {
     padding: 0 15px; }

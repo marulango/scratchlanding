@@ -8,7 +8,7 @@ header {
   a {
     color: $dark;
   }
-  .active {
+  .navbar-nav .active a.nav-link {
     color: $blue;
   }
   .logo img {
